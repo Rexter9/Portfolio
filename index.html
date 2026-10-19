@@ -281,7 +281,7 @@ html.menu-open { overflow: hidden; }
       <p class="lead">CSE student working across Node, React and LLM agents. I start with the data model, the API and auth, then add AI where it earns its place.</p>
       <div class="cta">
         <a class="btn primary" href="#work">See my projects</a>
-        <a class="btn ghost" id="resume-btn" href="#" data-pending>View resume ↗</a>
+        <a class="btn ghost" href="Faiz_Resume.pdf" download="Mohd_Faiz_Resume.pdf">Download resume ↓</a>
         <a class="btn ghost" href="https://github.com/Rexter9">GitHub ↗</a>
       </div>
       <dl class="stats">
@@ -499,18 +499,6 @@ html.menu-open { overflow: hidden; }
     } catch (e) {
       selectText();
     }
-  });
-})();
-/* Resume button: until a real link is set (remove data-pending), show a short notice instead of a dead click. */
-(function () {
-  var a = document.getElementById('resume-btn');
-  if (!a) return;
-  a.addEventListener('click', function (e) {
-    if (!a.hasAttribute('data-pending')) return;
-    e.preventDefault();
-    var old = a.textContent;
-    a.textContent = 'Resume coming soon';
-    setTimeout(function () { a.textContent = old; }, 1800);
   });
 })();
 </script>
